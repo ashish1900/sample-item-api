@@ -65,9 +65,7 @@ Content-Type: application/json
 }
 
 Response
-
 Status: 201 Created
-
 Returns the saved item with an auto-generated ID
 
 
