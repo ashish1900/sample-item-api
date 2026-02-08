@@ -62,8 +62,8 @@ Application is running
 Method: POST  
 URL:
 /items
-Example: 
 
+Example: 
 https://sample-item-api.onrender.com/items
 
 Request Body (JSON):
