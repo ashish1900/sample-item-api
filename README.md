@@ -38,3 +38,53 @@ Used to verify that the application is running.
 **Live URL**
 https://sample-item-api.onrender.com/items/ping
 
+
+
+---
+
+### 2. Add a New Item
+Creates a new item and stores it in memory.
+
+**POST**
+/items
+
+
+**Headers**
+
+
+Content-Type: application/json
+
+
+**Request Body Example**
+```json
+{
+  "name": "iPhone 15",
+  "description": "Latest Apple phone",
+  "price": 79999,
+  "category": "Electronics"
+}
+
+
+Response
+
+Status: 201 Created
+
+Returns the saved item with an auto-generated ID
+
+3. Get Item by ID
+
+Fetches a single item using its ID.
+
+GET
+
+/items/{id}
+
+
+Example
+
+/items/1
+
+
+Live URL Example
+
+https://sample-item-api.onrender.com/items/1
