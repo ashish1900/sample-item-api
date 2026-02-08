@@ -63,7 +63,9 @@ Method: POST
 URL:
 /items
 Example: 
+
 https://sample-item-api.onrender.com/items
+
 Request Body (JSON):
 {
   "name": "Laptop",
