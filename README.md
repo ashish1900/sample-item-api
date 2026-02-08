@@ -64,27 +64,10 @@ Content-Type: application/json
   "category": "Electronics"
 }
 
-
 Response
 
 Status: 201 Created
 
 Returns the saved item with an auto-generated ID
 
-3. Get Item by ID
 
-Fetches a single item using its ID.
-
-GET
-
-/items/{id}
-
-
-Example
-
-/items/1
-
-
-Live URL Example
-
-https://sample-item-api.onrender.com/items/1
