@@ -3,7 +3,7 @@
 A simple Spring Boot REST API for managing items.  
 This is a backend-only application created as a sample task and uses in-memory storage (no database).
 
-Note: This project does not include any UI. All operations are performed via REST APIs only.
+The project is **live deployed on Render**, so it can be tested directly without cloning or running locally.
 
 ----------------------------------------------------------------
 
@@ -11,6 +11,7 @@ FEATURES
 
 - Add a new item
 - Fetch item by ID
+- Input validation using Jakarta Validation
 - In-memory data storage using ArrayList
 - Health check API to keep the service alive on free hosting platforms
 - Clean layered architecture (Controller, Service, Model)
@@ -25,9 +26,21 @@ TECH STACK
 - Jakarta Validation
 - Lombok
 - Maven
+- Render (Cloud Deployment)
 - Docker (optional)
 
+----------------------------------------------------------------
 
+
+LIVE DEPLOYMENT
+
+This project is deployed on **Render** and is publicly accessible.
+
+Base URL:
+https://sample-item-api.onrender.com
+
+Health Check:
+https://sample-item-api.onrender.com/items/ping
 
 ----------------------------------------------------------------
 
@@ -42,9 +55,6 @@ URL:
 Response:
 Application is running
 
-Live URL:
-https://sample-item-api.onrender.com/items/ping
-
 ----------------------------------------------------------------
 
 2) Add New Item
@@ -52,7 +62,8 @@ https://sample-item-api.onrender.com/items/ping
 Method: POST  
 URL:
 /items
-
+Example: 
+https://sample-item-api.onrender.com/items
 Request Body (JSON):
 {
   "name": "Laptop",
@@ -70,6 +81,7 @@ Success Response: 201 CREATED
   "id": 1,
   "name": "Laptop",
   "description": "Gaming Laptop",
+  "description": "Gaming Laptop",
   "price": 75000,
   "category": "Electronics"
 }
@@ -82,8 +94,8 @@ Method: GET
 URL:
 /items/{id}
 
-Example:
-/items/1
+Example: 
+https://sample-item-api.onrender.com/items/1
 
 Success Response: 200 OK
 
@@ -103,20 +115,19 @@ If Item Not Found:
 DATA STORAGE
 
 - Uses in-memory storage (ArrayList)
-- Data is lost when the application restarts
+- Data is reset when the application restarts
 - Item IDs are auto-generated using a simple counter
 
 ----------------------------------------------------------------
 
-HOW TO RUN LOCALLY
+HOW TO TEST (NO SETUP REQUIRED)
 
-1. Clone the repository
-2. Open the project in IDE (IntelliJ / Eclipse / VS Code / STS)
-3. Run the Spring Boot application
-4. Test APIs using Postman or browser
+- The application is already deployed on Render
+- Use browser or Postman to test APIs directly
+- No cloning or local setup is required
 
-Local URL:
-https://sample-item-api.onrender.com/items
+Example:
+https://sample-item-api.onrender.com/items/ping
 
 ----------------------------------------------------------------
 
@@ -124,6 +135,6 @@ NOTES
 
 - This project is intended for learning, demo, and freelance sample purposes
 - No database integration is included
-- Can be easily extended with JPA, database, authentication, and security
+- Easily extendable with JPA, database, authentication, and security
 
 
