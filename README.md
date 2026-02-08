@@ -52,6 +52,9 @@ Method: GET
 URL:
 /items/ping
 
+Example:
+https://sample-item-api.onrender.com/items/ping
+
 Response:
 Application is running
 
@@ -128,8 +131,7 @@ HOW TO TEST (NO SETUP REQUIRED)
 - Use browser or Postman to test APIs directly
 - No cloning or local setup is required
 
-Example:
-https://sample-item-api.onrender.com/items/ping
+
 
 ----------------------------------------------------------------
 
