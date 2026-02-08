@@ -1,7 +1,7 @@
 # Sample Item Management REST API
 
 A simple Spring Boot REST API for managing items.  
-This is a backend-only application created as a sample/freelance task and uses in-memory storage (no database).
+This is a backend-only application created as a sample task and uses in-memory storage (no database).
 
 Note: This project does not include any UI. All operations are performed via REST APIs only.
 
@@ -11,7 +11,6 @@ FEATURES
 
 - Add a new item
 - Fetch item by ID
-- Input validation using Jakarta Validation
 - In-memory data storage using ArrayList
 - Health check API to keep the service alive on free hosting platforms
 - Clean layered architecture (Controller, Service, Model)
@@ -28,20 +27,7 @@ TECH STACK
 - Maven
 - Docker (optional)
 
-----------------------------------------------------------------
 
-PROJECT STRUCTURE
-
-com.ashish.sample
-|
-|-- controller
-|   |-- ItemController.java
-|
-|-- service
-|   |-- ItemService.java
-|
-|-- model
-|   |-- Item.java
 
 ----------------------------------------------------------------
 
@@ -125,12 +111,12 @@ DATA STORAGE
 HOW TO RUN LOCALLY
 
 1. Clone the repository
-2. Open the project in IDE (IntelliJ / Eclipse / VS Code)
+2. Open the project in IDE (IntelliJ / Eclipse / VS Code / STS)
 3. Run the Spring Boot application
 4. Test APIs using Postman or browser
 
 Local URL:
-http://localhost:8080/items/ping
+https://sample-item-api.onrender.com/items
 
 ----------------------------------------------------------------
 
@@ -140,9 +126,4 @@ NOTES
 - No database integration is included
 - Can be easily extended with JPA, database, authentication, and security
 
-----------------------------------------------------------------
 
-AUTHOR
-
-Ashish Yadav  
-Java | Spring Boot | REST API Developer
