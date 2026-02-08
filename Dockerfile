@@ -1,13 +1,16 @@
-# Base image with Java 17 (matches pom.xml)
+# Base image with Java 17
 FROM eclipse-temurin:17-jdk-alpine
 
 # Set working directory
 WORKDIR /app
 
-# Copy Maven wrapper and pom for dependency caching
+# Copy Maven wrapper and pom
 COPY mvnw .
 COPY .mvn .mvn
 COPY pom.xml .
+
+# Give execute permission to mvnw 
+RUN chmod +x mvnw
 
 # Download dependencies
 RUN ./mvnw dependency:go-offline -DskipTests
