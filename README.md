@@ -20,4 +20,4 @@ This is a simple Spring Boot REST API developed as part of a sample task.
 - GET /items/ping → Health check
 
 ## Live Demo
-https://sample-item-api.onrender.com
+https://sample-item-api.onrender.com/items/ping
